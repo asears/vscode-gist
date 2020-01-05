@@ -49,7 +49,7 @@ class GistsService {
 
   public delete(
     params: Octokit.GistsDeleteParams
-  ): Response<Octokit.GistsDeleteResponse> {
+  ): Response<Octokit.Response<any>> {
     return this.octokit.gists.delete(params);
   }
 
